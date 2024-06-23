@@ -3,6 +3,33 @@
 
 <br/><img src="images/screenshot.png" width="200"><br/>
 
+# Description
+
+## Socket Communication
+
+If the app runs, the app automatically connects to the server.
+
+The server sends data to the android app every 2 seconds. In the project, the data is simple with `timestamp` and `value`
+
+The server caches the data using **Redis**.
+
+Once the app receives the data, it shows it as a text on the LogView(bottom part of the screen) and on the chart(for visual effect).
+
+If the socket connection losts, the app automatically try reconnection util the connection is established again.
+
+Once the app reconnects to the server, the server sends the cached data to the app at once.
+
+Every socket connection status are also display on the LogView as well.
+
+## QR/Bar code scanning
+Also you can scan QR/Bar code using front camera; you can find it on the upper left conner of the screen.
+
+If a QR Code or barcode is scanned, it also shows it on the LogView and sends it to the server.
+
+Server displays the scan result on the console.
+
+<br/>
+
 # Project
 ## 1. Android Application
 The app maintains an active connection with the server using [Socket.IO](https://socket.io/).
@@ -13,6 +40,8 @@ The app keeps the front camera active for scanning QR/bacords using [zxing](http
 The server sends messages to the connected Android devices every 2 seconds using [Socket.IO](https://socket.io/).
 
 The server uses [Redis](https://redis.io/) to cache the data to protect data loss and to increase server performance.
+
+<br/>
 
 # Tech Stacks
 ## 1. Android Application
