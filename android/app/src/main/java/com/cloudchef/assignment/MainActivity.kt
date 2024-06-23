@@ -46,8 +46,6 @@ class MainActivity : AppCompatActivity() {
     private var socketData: ArrayList<DataModel> = ArrayList()
 
     // Web Socket Client
-    // if you are using android emulator, url is "ws://10.0.2.2:PORT
-    // if you are using phone, url is "ws://IP_ADDRESS:PORT
     private var socketOption = SocketOptionBuilder.builder()
         .setTimeout(5000)
         .setReconnectionDelay(1000)
