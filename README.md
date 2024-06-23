@@ -28,7 +28,8 @@ The server uses [Redis](https://redis.io/) to cache the data to protect data los
 
 # User Guide
 ## 1. Android Application
-Install Android Studio and your Android Emulator Ready(Android Studio Emulator, Nox, LDPlayer etc)
+- Install Android Studio and your Android Emulator Ready(Android Studio Emulator, Nox, LDPlayer etc)
+- Configure SOCKET_URI in `./android/app/src/main/java/com/cloudchef/assignment/util/Constants.kt`
 
 ## 2. Server Application
  - Download or Clone the project
