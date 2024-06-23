@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="net_connected">Connection Established</string>
+    <string name="net_connecting_delay">Reconnecting in %1$d seconds</string>
+    <string name="net_connecting">Connecting...</string>
+</resources>
